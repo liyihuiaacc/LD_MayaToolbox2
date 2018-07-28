@@ -1,5 +1,7 @@
 import sys
 import os
+import subprocess
+import getpass
 import xml.etree.ElementTree as xml
 from cStringIO import StringIO
 from functools import partial
@@ -36,11 +38,21 @@ except ImportError:
 from ldmt_ribbonTools import *
 from ldmt_checkUVBleed import *
 from ldmt_function import ldmt_toggleUI
+
 cmds.evalDeferred("from ldmt_function import rjCMDSearch; rjCMDSearch.install()")
 reload(ldmt_toggleUI)
 ldmt_function_path = ld.getPath('LDMT') + '/ldmt_function'
 ldmt_plugin_path = ld.getPath('LDMT') + '/ldmt_plugin'
 maya_version = cmds.about(version=1)
+maya_location = os.environ['MAYA_LOCATION']
+maya_pyLocation = maya_location+"/bin"+"/mayapy.exe"
+userName = getpass.getuser()
+def ldmt_postInfo(userName,functionName):
+    postInfoPath = ldmt_function_path + "/ldmt_postInfo.py"
+    try:
+        subprocess.Popen('"'+MAYA_pyLocation+'" '+postInfoPath+' '+userName+' '+functionName,shell=True)
+    except:
+     subprocess.Popen('python '+postInfoPath+' '+userName+' '+functionName,shell=True)
 
 def getUiFile():
     LDMT_LOC = ld.getPath('LDMT')
@@ -625,7 +637,9 @@ class LDMT_mainUI(MayaQWidgetDockableMixin, QtWidgets.QMainWindow):
             self.toggleToolBtnByMsg(message)
 
         ld.msg(message)
-        
+        postUsername = userName.replace(' ','_',10)
+        postCommand = message.replace(' ','_',10)
+        ldmt_postInfo(postUsername,postCommand)
     def dockCloseEventTriggered(self):
         self.deleteInstances()
 
