@@ -38,7 +38,7 @@ except ImportError:
 from ldmt_ribbonTools import *
 from ldmt_checkUVBleed import *
 from ldmt_function import ldmt_toggleUI
-
+from ldmt_curveOnMesh import *
 cmds.evalDeferred("from ldmt_function import rjCMDSearch; rjCMDSearch.install()")
 reload(ldmt_toggleUI)
 ldmt_function_path = ld.getPath('LDMT') + '/ldmt_function'
@@ -504,8 +504,7 @@ class LDMT_mainUI(MayaQWidgetDockableMixin, QtWidgets.QMainWindow):
         elif message == "Ribbon Tools":
             LDRibbonToolsUI_show()
         elif message == "Curve On Mesh":
-            from ldmt_function import ldmt_curveOnMesh
-            ldmt_curveOnMesh.startDraw()
+            startDraw()
         elif message == "Clean Procedure":
             from ldmt_function import ldmt_cleanProcedure
             ldmt_cleanProcedure.cleanProcedure()
