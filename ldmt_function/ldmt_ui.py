@@ -247,6 +247,8 @@ class LDMT_mainUI(MayaQWidgetDockableMixin, QtWidgets.QMainWindow):
         self.ui.btn_topoBlendshape.clicked.connect(partial(self.ldmt_function,"Topo Blendshape"))
         self.ui.btn_faceTransfer.clicked.connect(partial(self.ldmt_function,"Face Transfer"))
         self.ui.btn_clothTransfer.clicked.connect(partial(self.ldmt_function,"Cloth Transfer"))
+        self.ui.btn_marvelousTool.clicked.connect(partial(self.ldmt_function,"Marvelous Tool"))
+
         # Select Tools
         self.ui.btn_hardEdges.clicked.connect(partial(self.ldmt_function,"Select Hard Edges"))
         self.ui.btn_UVBorders.clicked.connect(partial(self.ldmt_function,"Select UV Borders"))
@@ -420,6 +422,9 @@ class LDMT_mainUI(MayaQWidgetDockableMixin, QtWidgets.QMainWindow):
             from ldmt_function import ldmt_clothTransfer
             reload(ldmt_clothTransfer)
             ldmt_clothTransfer.ldmt_show()
+        elif message == "Marvelous Tool":
+            from ldmt_function import ldmt_marvelousTool
+            ldmt_marvelousTool.ldmt_show()
 
         # Select Tools
         elif message == "Select Hard Edges":
@@ -631,7 +636,7 @@ class LDMT_mainUI(MayaQWidgetDockableMixin, QtWidgets.QMainWindow):
         cmds.undoInfo(cck = 1)
         toolMessage = ["Mirror Tool", "Flatten Tool", "Nanomesh", "Instant Meshes", "Cloth Transfer", "Random Selector","Custom Grouper",\
                         "N Edge Selector","Rope","Ribbon Tools","Check UV Bleed","Scene","Clean Mesh","Display","Quick Export",\
-                        "Texture Render"]
+                        "Texture Render","Marvelous Tool"]
         if message in toolMessage:
             self.toggleToolBtnByMsg(message)
 

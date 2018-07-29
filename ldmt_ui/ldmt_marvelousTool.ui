@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ldmt_marvelousTool</class>
+ <widget class="QMainWindow" name="ldmt_marvelousTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>90</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>90</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>90</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Marvelous Tool</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color: rgb(68,68,68);
+}
+QWidget#centralwidget{
+background-color: rgb(68,68,68);
+}
+QPushButton{ 
+border:1px solid rgb(30,30,30);
+border-radius:4px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(235, 158, 108, 195));
+color:rgb(25,25,25);}
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(255, 178, 128, 195));
+color:rgb(25,25,25);}
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(235, 158, 108, 195), stop:1 rgba( 189, 118, 57, 225));
+color:rgb(25,25,25);}
+
+QRadioButton{
+color:rgb(175,175,175);
+}
+QCheckBox{
+color:rgb(175,175,175);
+}
+
+QStatusBar QLabel {
+    border: 3px solid white;
+}
+
+QStatusBar {
+    color: rgb(175,175,175);
+}
+
+QStatusBar::item {
+    border: 1px solid red;
+    border-radius: 3px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <item row="4" column="0" colspan="2">
+     <widget class="QPushButton" name="btn_flatten">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="statusTip">
+       <string>Select all garments first.</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{ 
+border:1px solid rgb(30,30,30);
+border-radius:4px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(235, 158, 108, 195));
+color:rgb(25,25,25);}
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(255, 178, 128, 195));
+color:rgb(25,25,25);}
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(235, 158, 108, 195), stop:1 rgba( 189, 118, 57, 225));
+color:rgb(25,25,25);}</string>
+      </property>
+      <property name="text">
+       <string>1. Flatten Garment</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2" colspan="2">
+     <widget class="QPushButton" name="btn_makePairs">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="statusTip">
+       <string>Select all garment, pattern and retopo first. </string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{ 
+border:1px solid rgb(30,30,30);
+border-radius:4px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(235, 158, 108, 195));
+color:rgb(25,25,25);}
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(189, 118, 57, 225), stop:1 rgba(255, 178, 128, 195));
+color:rgb(25,25,25);}
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(235, 158, 108, 195), stop:1 rgba( 189, 118, 57, 225));
+color:rgb(25,25,25);}</string>
+      </property>
+      <property name="text">
+       <string>2. Make Pairs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="4">
+     <widget class="QSlider" name="slider_blendshape">
+      <property name="statusTip">
+       <string>Change blendshape value.</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="statusTip">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

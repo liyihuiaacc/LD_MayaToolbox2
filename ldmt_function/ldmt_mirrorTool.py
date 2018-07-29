@@ -71,9 +71,9 @@ class ldmt_cls(ldmt_mirrorTool_list_form, ldmt_mirrorTool_list_base):
         elif self.radioButton_z.isChecked():
             targetAxis = 2
         if self.checkBox_weld.isChecked():
-            ifCutmesh = 0
-        else:
             ifCutmesh = 1
+        else:
+            ifCutmesh = 0
         if self.checkBox_reverse.isChecked():
             ifReverse = 0
         else:

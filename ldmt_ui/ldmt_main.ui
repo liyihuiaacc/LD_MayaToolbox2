@@ -788,53 +788,6 @@ color:rgb(25,25,25);}</string>
                   <property name="spacing">
                    <number>1</number>
                   </property>
-                  <item row="3" column="0">
-                   <widget class="QPushButton" name="btn_flattenTool">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Components flatten tool.</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(175, 175,175, 235), stop:1 rgba(235, 235, 235, 195));
-color:rgb(25,25,25);}
-
-QPushButton:hover{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(190, 190, 190, 255), stop:1 rgba(245, 245, 245, 255));
-color:rgb(25,25,25);
-}
-
-QPushButton:pressed{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(215, 215, 215, 195), stop:1 rgba(155, 155,155, 235));
-color:rgb(25,25,25);}</string>
-                    </property>
-                    <property name="text">
-                     <string>Flatten Tool</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="1" column="0">
                    <widget class="QPushButton" name="btn_mirrorTool">
                     <property name="minimumSize">
@@ -882,6 +835,203 @@ color:rgb(25,25,25);}</string>
                     </property>
                    </widget>
                   </item>
+                  <item row="3" column="0">
+                   <widget class="QPushButton" name="btn_flattenTool">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Components flatten tool.</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(175, 175,175, 235), stop:1 rgba(235, 235, 235, 195));
+color:rgb(25,25,25);}
+
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(190, 190, 190, 255), stop:1 rgba(245, 245, 245, 255));
+color:rgb(25,25,25);
+}
+
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(215, 215, 215, 195), stop:1 rgba(155, 155,155, 235));
+color:rgb(25,25,25);}</string>
+                    </property>
+                    <property name="text">
+                     <string>Flatten Tool</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="btn_resetPivot">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Ctrl: 0/ Shift: Pivot To Center/ Alt: Freeze/ Ctrl+Shift: World/ Ctrl+Shift+Alt: Restore </string>
+                    </property>
+                    <property name="text">
+                     <string>Reset Pivot</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QPushButton" name="btn_deleteHistory">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Left Click: Sel/ Ctrl: All.</string>
+                    </property>
+                    <property name="text">
+                     <string>Delete History</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="btn_turboSmooth">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Smooth soft edge, keep hard edge sharp.</string>
+                    </property>
+                    <property name="text">
+                     <string>Turbo Smooth</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QPushButton" name="btn_rebuildSubdiv">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Reconstruct subdivision.</string>
+                    </property>
+                    <property name="text">
+                     <string>Rebuild Subdiv</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="btn_morphToUV">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Morph selected mesh to uv shape in 0-1.</string>
+                    </property>
+                    <property name="text">
+                     <string>Morph To UV</string>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="5" column="0">
                    <widget class="QPushButton" name="btn_circularize">
                     <property name="minimumSize">
@@ -925,156 +1075,6 @@ color:rgb(25,25,25);}</string>
                     </property>
                     <property name="text">
                      <string>Circularize</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="5" column="1">
-                   <widget class="QPushButton" name="btn_rebuildSubdiv">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Reconstruct subdivision.</string>
-                    </property>
-                    <property name="text">
-                     <string>Rebuild Subdiv</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="1">
-                   <widget class="QPushButton" name="btn_resetPivot">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Ctrl: 0/ Shift: Pivot To Center/ Alt: Freeze/ Ctrl+Shift: World/ Ctrl+Shift+Alt: Restore </string>
-                    </property>
-                    <property name="text">
-                     <string>Reset Pivot</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="4" column="0">
-                   <widget class="QPushButton" name="btn_morphToUV">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Morph selected mesh to uv shape in 0-1.</string>
-                    </property>
-                    <property name="text">
-                     <string>Morph To UV</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="4" column="1">
-                   <widget class="QPushButton" name="btn_turboSmooth">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Smooth soft edge, keep hard edge sharp.</string>
-                    </property>
-                    <property name="text">
-                     <string>Turbo Smooth</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="1">
-                   <widget class="QPushButton" name="btn_deleteHistory">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>17</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Left Click: Sel/ Ctrl: All.</string>
-                    </property>
-                    <property name="text">
-                     <string>Delete History</string>
                     </property>
                    </widget>
                   </item>
@@ -1304,53 +1304,6 @@ color:rgb(25,25,25);}</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="1" column="0">
-                   <widget class="QPushButton" name="btn_faceTransfer">
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>15</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>22</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="statusTip">
-                     <string>Transfer facial expression by topology. By Robert Joosten. </string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(175, 175,175, 235), stop:1 rgba(235, 235, 235, 195));
-color:rgb(25,25,25);}
-
-QPushButton:hover{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(190, 190, 190, 255), stop:1 rgba(245, 245, 245, 255));
-color:rgb(25,25,25);
-}
-
-QPushButton:pressed{ 
- border:1px solid rgb(30,30,30);
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(215, 215, 215, 195), stop:1 rgba(155, 155,155, 235));
-color:rgb(25,25,25);}</string>
-                    </property>
-                    <property name="text">
-                     <string>Face Transfer</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="0" column="1">
                    <widget class="QPushButton" name="btn_topoBlendshape">
                     <property name="minimumSize">
@@ -1398,6 +1351,53 @@ color:rgb(25,25,25);}</string>
                     </property>
                    </widget>
                   </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btn_faceTransfer">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Transfer facial expression by topology. By Robert Joosten. </string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(175, 175,175, 235), stop:1 rgba(235, 235, 235, 195));
+color:rgb(25,25,25);}
+
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(190, 190, 190, 255), stop:1 rgba(245, 245, 245, 255));
+color:rgb(25,25,25);
+}
+
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(215, 215, 215, 195), stop:1 rgba(155, 155,155, 235));
+color:rgb(25,25,25);}</string>
+                    </property>
+                    <property name="text">
+                     <string>Face Transfer</string>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="1" column="1">
                    <widget class="QPushButton" name="btn_clothTransfer">
                     <property name="minimumSize">
@@ -1442,6 +1442,53 @@ color:rgb(25,25,25);}</string>
                     </property>
                     <property name="text">
                      <string>Cloth Transfer</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btn_marvelousTool">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="statusTip">
+                     <string>Morph selected mesh to uv shape in 0-1.</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(175, 175,175, 235), stop:1 rgba(235, 235, 235, 195));
+color:rgb(25,25,25);}
+
+QPushButton:hover{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(190, 190, 190, 255), stop:1 rgba(245, 245, 245, 255));
+color:rgb(25,25,25);
+}
+
+QPushButton:pressed{ 
+ border:1px solid rgb(30,30,30);
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(215, 215, 215, 195), stop:1 rgba(155, 155,155, 235));
+color:rgb(25,25,25);}</string>
+                    </property>
+                    <property name="text">
+                     <string>Marvelous Tool</string>
                     </property>
                    </widget>
                   </item>
